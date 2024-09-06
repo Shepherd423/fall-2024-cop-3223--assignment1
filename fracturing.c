@@ -1,5 +1,5 @@
 #include <stdio.h>
 
 int main() {
-    retuen0;
+    return 0;
 }
