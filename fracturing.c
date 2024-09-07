@@ -5,21 +5,26 @@
 
 int main(int argc, char **argv);
 double calculateDistance();
-//double calculatePerimeter();
-//double calculateArea();
-//double calculateWidth();
-//double calculateHeight();
+double calculatePerimeter(double distance);
+double calculateArea(double distance);
+double calculateWidth(double distance);
+double calculateHeight(double distance);
 double askForUserInput();
-
 double evaluateDistance(double x1, double y1, double x2, double y2);
 
 int main(int argc, char **argv) 
 {
-    calculateDistance();
-   // calculatePerimeter();
-   // calculateArea();
-   // calculateWidth();
-   // calculateHeight();
+    double distance = calculateDistance();
+
+    double perimeterDifficulty = calculatePerimeter(distance);
+    double areaDifficulty = calculateArea(distance);
+    double widthtDifficulty = calculateWidth(distance);
+    double heightDifficulty = calculateHeight(distance);
+
+    printf("Perimeter Difficulty: %.1f\n", perimeterDifficulty);
+    printf("Area Difficulty: %.1f\n", areaDifficulty);
+    printf("Width Difficulty: %.1f\n", widthDifficulty);
+    printf("Height Difficulty: %.1f\n", heightDifficulty);
 
     return 0;
 }
@@ -29,6 +34,7 @@ double askForUserInput() {
     scanf("%lf", &input);
     return input;
 }
+
 double calculateDistance() {
     double x1, y1, x2, y2;
 
@@ -56,3 +62,34 @@ double calculateDistance() {
 double evaluateDistance(double x1, double y1, double x2, double y2){
     return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 }
+
+double calculatePerimeter(double distance) {
+    double perimeter = PI * distance;
+
+    printf("The perimeter of the city encompassed by your request is %.2f\n", perimeter);
+
+    return 2.0;
+}
+
+double calculateArea(double distance) {
+    double diameter = distance;
+    double area = (PI * pow(diameter, 2))/ 4;
+    
+    printf("The area of the city encompassed by your request is %.2f\n", area);
+
+    return 3.5;
+}
+
+double calculateWidth(double distance) {
+    printf("The width of the city encompassed by your request is %.2f\n", distance);
+
+    return 2.0;
+}
+
+double calculateHeight(double distance) {
+    printf("The height of the city encompassed by your request is %.2f\n", distance);
+
+    return 2.5;
+}
+
+
