@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 
     double perimeterDifficulty = calculatePerimeter(distance);
     double areaDifficulty = calculateArea(distance);
-    double widthtDifficulty = calculateWidth(distance);
+    double widthDifficulty = calculateWidth(distance);
     double heightDifficulty = calculateHeight(distance);
 
     printf("Perimeter Difficulty: %.1f\n", perimeterDifficulty);
