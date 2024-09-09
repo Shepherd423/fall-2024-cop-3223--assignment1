@@ -66,7 +66,7 @@ double evaluateDistance(double x1, double y1, double x2, double y2){
 double calculatePerimeter(double distance) {
     double perimeter = PI * distance;
 
-    printf("The perimeter of the city encompassed by your request is %.2f\n", perimeter);
+    printf("The perimeter of the city encompassed by your request is %.3f\n", perimeter);
 
     return 2.0;
 }
