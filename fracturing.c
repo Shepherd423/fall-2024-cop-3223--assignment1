@@ -1,8 +1,7 @@
-#define PI 3.14159     
-
-
 #include <stdio.h>
 #include <math.h>
+
+#define PI 3.14159 
 
 
 int main(int arqc, char **argv);
@@ -65,7 +64,7 @@ double evaluateDistance(double x1, double y1, double x2, double y2){
     return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 }
 
-double calculatePerimeter(double distance) {
+double calculatePerimeter() {
     double perimeter = PI * distance;
 
     printf("The perimeter of the city encompassed by your request is %.3f\n", perimeter);
@@ -73,7 +72,7 @@ double calculatePerimeter(double distance) {
     return 2.0;
 }
 
-double calculateArea(double distance) {
+double calculateArea() {
     double diameter = distance;
     double area = (PI * pow(diameter, 2))/ 4;
     
@@ -82,13 +81,13 @@ double calculateArea(double distance) {
     return 3.5;
 }
 
-double calculateWidth(double distance) {
+double calculateWidth() {
     printf("The width of the city encompassed by your request is %.2f\n", distance);
 
     return 2.0;
 }
 
-double calculateHeight(double distance) {
+double calculateHeight() {
     printf("The height of the city encompassed by your request is %.2f\n", distance);
 
     return 2.5;
