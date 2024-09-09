@@ -1,7 +1,9 @@
+#define PI 3.14159
+
+
 #include <stdio.h>
 #include <math.h>
 
-#define PI 3.14159
 
 int main(int arqc, char **argv);
 double calculateDistance();
