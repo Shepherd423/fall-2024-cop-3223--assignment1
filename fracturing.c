@@ -3,7 +3,7 @@
 
 #define PI 3.14159
 
-int main();
+int main(int arqc, char **argv);
 double calculateDistance();
 double calculatePerimeter(double distance);
 double calculateArea(double distance);
@@ -12,7 +12,7 @@ double calculateHeight(double distance);
 double askForUserInput();
 double evaluateDistance(double x1, double y1, double x2, double y2);
 
-int main() 
+int main(int arqc, char **argv) 
 {
     double distance = calculateDistance();
 
