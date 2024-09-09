@@ -3,7 +3,7 @@
 
 #define PI 3.14159
 
-int main(int argc, char **argv);
+int main();
 double calculateDistance();
 double calculatePerimeter(double distance);
 double calculateArea(double distance);
