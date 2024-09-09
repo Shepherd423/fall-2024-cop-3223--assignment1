@@ -12,7 +12,7 @@ double calculateHeight(double distance);
 double askForUserInput();
 double evaluateDistance(double x1, double y1, double x2, double y2);
 
-int main(int argc, char **argv) 
+int main() 
 {
     double distance = calculateDistance();
 
